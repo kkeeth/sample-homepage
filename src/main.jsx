@@ -8,6 +8,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: (
+      <>
+        <h2>Oops!!</h2>Back to <a href="/">TOP</a>
+      </>
+    ),
   },
   {
     path: "/blogs",
