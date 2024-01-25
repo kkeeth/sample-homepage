@@ -106,6 +106,16 @@
 }
 
 /*--------------------
+フッター
+---------------------*/
+footer {
+  background-color: #bdbbff;
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+/*--------------------
 レスポンシブ
 ---------------------*/
 @media screen and (max-width: 414px) {
