@@ -10,6 +10,10 @@ header {
 header h1 {
   display: flex;
 }
+header h1 a {
+  display: flex;
+  align-items: center;
+}
 header .logo img {
   width: 40px;
 }
@@ -22,10 +26,34 @@ header .logo .site-name {
   position: relative;
   top: -4px;
 }
+header .header-sns-items {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+}
 header .header-sns-items img {
   width: 30px;
   height: 30px;
 }
 header .header-sns-items li + li {
   margin-left: 20px;
+}
+
+@media screen and (max-width: 414px) {
+  header {
+    width: 100%;
+    height: 300px;
+  }
+
+  .header-items {
+    font-size: 16px;
+    overflow: scroll;
+  }
+  .header-items ul {
+    justify-content: flex-start;
+  }
+  .header-nav-items {
+    margin-right: 0;
+    padding: 0 16px;
+  }
 }

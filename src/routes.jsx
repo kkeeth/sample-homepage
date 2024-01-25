@@ -1,32 +1,42 @@
-import App from "./App.jsx";
-import Blog from "./pages/Blog.jsx";
-import Contact from "./pages/Contact.jsx";
-import BaseLayout from "./components/BaseLayout.jsx";
+import App from "./pages/App";
+import Output from "./pages/Output";
+import Profile from "./pages/Profile";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
+import BaseLayout from "./components/BaseLayout";
 
 export default [
   {
     path: "/",
+    name: "Home",
     element: (
       <BaseLayout>
         <App />
       </BaseLayout>
     ),
-    errorElement: (
-      <>
-        <h2>Oops!!</h2>Back to <a href="/">TOP</a>
-      </>
+    errorElement: <NotFound />,
+  },
+  {
+    path: "/profile",
+    name: "Profile",
+    element: (
+      <BaseLayout>
+        <Profile />
+      </BaseLayout>
     ),
   },
   {
-    path: "/blogs",
+    path: "/output",
+    name: "Output",
     element: (
       <BaseLayout>
-        <Blog />
+        <Output />
       </BaseLayout>
     ),
   },
   {
     path: "/contact",
+    name: "Contact",
     element: (
       <BaseLayout>
         <Contact />

@@ -1,5 +1,4 @@
-.header-nav-items ul,
-header .header-sns-items {
+.header-nav-items ul {
   display: flex;
   justify-content: flex-end;
   text-transform: uppercase;
