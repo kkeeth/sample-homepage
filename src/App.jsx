@@ -5,7 +5,7 @@ const App = () => {
     <>
       <div className="wrapper">
         <div className="main-visual">
-          <img src="bg-image.jpeg" alt="メインビジュアル" />
+          <img src="/src/assets/bg-image.jpeg" alt="メインビジュアル" />
           <div className="main-text">
             <h2>Kuwahara Keeth Kiyohito</h2>
             <p>it is my portfolit site</p>
