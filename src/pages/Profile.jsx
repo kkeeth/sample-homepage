@@ -1,39 +1,111 @@
-import "./Profile.css";
-
 const Profile = () => {
   return (
     <>
-      <h1 className="section-title">Profile</h1>
-      <p className="bio">
-        1987年岡山県生まれ
-        <br className="" />
-        個人事業主として Web
-        アプリケーション開発・アドバイザリーをしております。
-        <br />
-        2011年、株式会社〇〇にて Web Developer としての人生を開始。
-        <br />
-        2013~2015年、２度の転職を経つつ PL・PjM など幅広い業務経験を積む。
-        <br />
-        2018年より個人事業主として開業し、会社員として二足のわらじで活動中。
-      </p>
-      <div className="profile">
-        <div className="flex-box-left">
-          <img
-            src="https://cdn.stand.fm/images/01G444ZTY6HXVBFPE509JWJ9XM.jpg"
-            alt="顔写真"
-          />
+      <div className="flex-row md:flex items-center justify-center ">
+        <div className="md:w-1/2 p-4">
+          <div className="text-center">
+            <img
+              src="https://cdn.stand.fm/images/01G444ZTY6HXVBFPE509JWJ9XM.jpg"
+              alt="顔写真"
+            />
+          </div>
         </div>
-        <div className="flex-box-right">
-          <dl>
-            <dt>名前:</dt>
-            <dd>桑原聖仁（Kuwahara KEETH Kiyohito）</dd>
-            <dt>所在地:</dt>
-            <dd>東京都板橋区</dd>
-            <dt>email:</dt>
-            <dd>zensin0082@gmail.com</dd>
-            <dt>𝕏:</dt>
-            <dd>@kuwahara_jsri</dd>
-          </dl>
+        <div className="md:w-1/2 p-4 border-gray-300 mt-4 lg:mt-0">
+          <div className="text-center">
+            <h1 className="text-3xl font-semibold mb-4">桑原聖仁</h1>
+            <p className="max-w-2xl text-sm leading-6 text-gray-500">
+              Kuwahara KEETH Kiyohito
+            </p>
+          </div>
+          <div className="mt-6 border-t border-gray-100">
+            <dl className="divide-y divide-gray-100">
+              <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt className="text-sm font-medium leading-6 text-gray-900">
+                  所属企業
+                </dt>
+                <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                  <a
+                    href="https://yumemi.co.jp"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    株式会社ゆめみ
+                  </a>
+                </dd>
+              </div>
+              <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt className="text-sm font-medium leading-6 text-gray-900">
+                  メールアドレス
+                </dt>
+                <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                  zensin0082@gmail.com
+                </dd>
+              </div>
+              <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt className="text-sm font-medium leading-6 text-gray-900">
+                  About
+                </dt>
+                <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                  1987年岡山県生まれ
+                  <br className="" />
+                  個人事業主として
+                  Webアプリケーション開発・プログラミング講師・ピープルマネジメント・コーチングを行う．
+                  <br />
+                  2011年、都内ベンチャー企業にて Web Developer
+                  としての人生を開始．
+                  <br />
+                  2013〜2015年，２度の転職を経つつ
+                  PL・PjMなど幅広い業務経験を積む．
+                  <br />
+                  2018年より個人事業主として開業し，会社員として二足のわらじで活動中．
+                  <br />
+                  毎日ポッドキャストで様々なことを雑談形式で配信中．
+                </dd>
+              </div>
+              <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt className="text-sm font-medium leading-6 text-gray-900">
+                  𝕏
+                </dt>
+                <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                  <a
+                    href="https://x.com/kuwahara_jsri"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    @kuwahara_jsri
+                  </a>
+                </dd>
+              </div>
+              <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt className="text-sm font-medium leading-6 text-gray-900">
+                  GitHub
+                </dt>
+                <dd>
+                  <a
+                    href="https://github.com/kkeeth"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    @kkeeth
+                  </a>
+                </dd>
+              </div>
+              <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt className="text-sm font-medium leading-6 text-gray-900">
+                  ポッドキャスト
+                </dt>
+                <dd>
+                  <a
+                    href="https://art19.com/shows/kkeethengineers"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    kkeethのエンジニア雑談チャンネル
+                  </a>
+                </dd>
+              </div>
+            </dl>
+          </div>
         </div>
       </div>
     </>
