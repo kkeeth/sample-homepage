@@ -2,11 +2,12 @@ const Profile = () => {
   return (
     <>
       <div className="flex-row md:flex items-center justify-center ">
-        <div className="md:w-1/2 p-4">
+        <div className="md:w-1/2 pl-4 pr-2">
           <div className="text-center">
             <img
               src="https://cdn.stand.fm/images/01G444ZTY6HXVBFPE509JWJ9XM.jpg"
               alt="顔写真"
+              className="w-full"
             />
           </div>
         </div>
@@ -20,7 +21,7 @@ const Profile = () => {
           <div className="mt-6 border-t border-gray-100">
             <dl className="divide-y divide-gray-100">
               <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                <dt className="text-sm font-medium leading-6 text-gray-900">
+                <dt className="text-md font-medium leading-6 text-gray-900">
                   所属企業
                 </dt>
                 <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
@@ -34,7 +35,7 @@ const Profile = () => {
                 </dd>
               </div>
               <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                <dt className="text-sm font-medium leading-6 text-gray-900">
+                <dt className="text-md font-medium leading-6 text-gray-900">
                   メールアドレス
                 </dt>
                 <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
@@ -42,8 +43,8 @@ const Profile = () => {
                 </dd>
               </div>
               <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                <dt className="text-sm font-medium leading-6 text-gray-900">
-                  About
+                <dt className="text-md font-medium leading-6 text-gray-900">
+                  経歴
                 </dt>
                 <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                   1987年岡山県生まれ
@@ -63,7 +64,7 @@ const Profile = () => {
                 </dd>
               </div>
               <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                <dt className="text-sm font-medium leading-6 text-gray-900">
+                <dt className="text-md font-medium leading-6 text-gray-900">
                   𝕏
                 </dt>
                 <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
@@ -77,10 +78,10 @@ const Profile = () => {
                 </dd>
               </div>
               <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                <dt className="text-sm font-medium leading-6 text-gray-900">
+                <dt className="text-md font-medium leading-6 text-gray-900">
                   GitHub
                 </dt>
-                <dd>
+                <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                   <a
                     href="https://github.com/kkeeth"
                     target="_blank"
@@ -91,10 +92,10 @@ const Profile = () => {
                 </dd>
               </div>
               <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                <dt className="text-sm font-medium leading-6 text-gray-900">
+                <dt className="text-md font-medium leading-6 text-gray-900">
                   ポッドキャスト
                 </dt>
-                <dd>
+                <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                   <a
                     href="https://art19.com/shows/kkeethengineers"
                     target="_blank"

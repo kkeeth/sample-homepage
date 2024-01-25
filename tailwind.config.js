@@ -4,5 +4,11 @@ export default {
   theme: {
     extend: {},
   },
+  assetsInclude: ["**/*.{jpeg,png,jpg}"],
   plugins: [],
+  resolve: {
+    alias: {
+      "@": "src/assets",
+    },
+  },
 };

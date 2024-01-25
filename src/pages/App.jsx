@@ -1,112 +1,23 @@
 import "./App.css";
+import keyVisual from "../assets/bg-image.png";
 
 const App = () => {
   return (
     <>
-      <div className="wrapper">
-        <div className="main-visual">
-          <img src="/src/assets/bg-image.jpeg" alt="メインビジュアル" />
-          <div className="main-text">
-            <h2>Kuwahara Keeth Kiyohito</h2>
-            <p>it is my portfolit site</p>
-          </div>
+      <div className="h-[800px] w-auto relative isolate overflow-hidden">
+        <img
+          className=" h-full object-cover opacity-30"
+          src={keyVisual}
+          alt="キービジュアル画像"
+        />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 text-white text-center">
+          <h1 className="w-screen text-4xl tracking-tight text-gray-900 sm:text-6xl">
+            Kuwahara KEETH Kiyohito
+          </h1>
+          <p className="mt-6 text-2xl leading-8 text-gray-600">
+            Welcome to my homepage. Thanks.
+          </p>
         </div>
-        <section id="works">
-          <h2 className="section-title">Works</h2>
-          <ul className="works-items">
-            <li className="item">
-              <a href="#">
-                <picture>
-                  <source
-                    srcSet="https://picsum.photos/id/10/268"
-                    media="(min-width: 768px)"
-                    type="image/jpg"
-                  />
-
-                  <img
-                    src="https://picsum.photos/id/10/400"
-                    alt="work thumbnail"
-                  />
-                </picture>
-              </a>
-            </li>
-            <li className="item">
-              <a href="#">
-                <picture>
-                  <source
-                    srcSet="https://picsum.photos/id/20/268"
-                    media="(min-width: 768px)"
-                    type="image/jpg"
-                  />
-                  <img
-                    src="https://picsum.photos/id/20/400"
-                    alt="work thumbnail"
-                  />
-                </picture>
-              </a>
-            </li>
-            <li className="item">
-              <a href="#">
-                <picture>
-                  <source
-                    srcSet="https://picsum.photos/id/30/268"
-                    media="(min-width: 768px)"
-                    type="image/jpg"
-                  />
-                  <img
-                    src="https://picsum.photos/id/30/400"
-                    alt="work thumbnail"
-                  />
-                </picture>
-              </a>
-            </li>
-            <li className="item">
-              <a href="#">
-                <picture>
-                  <source
-                    srcSet="https://picsum.photos/id/40/268"
-                    media="(min-width: 768px)"
-                    type="image/jpg"
-                  />
-                  <img
-                    src="https://picsum.photos/id/40/400"
-                    alt="work thumbnail"
-                  />
-                </picture>
-              </a>
-            </li>
-            <li className="item">
-              <a href="#">
-                <picture>
-                  <source
-                    srcSet="https://picsum.photos/id/50/268"
-                    media="(min-width: 768px)"
-                    type="image/jpg"
-                  />
-                  <img
-                    src="https://picsum.photos/id/50/400"
-                    alt="work thumbnail"
-                  />
-                </picture>
-              </a>
-            </li>
-            <li className="item">
-              <a href="#">
-                <picture>
-                  <source
-                    srcSet="https://picsum.photos/id/60/268"
-                    media="(min-width: 768px)"
-                    type="image/jpg"
-                  />
-                  <img
-                    src="https://picsum.photos/id/60/400"
-                    alt="work thumbnail"
-                  />
-                </picture>
-              </a>
-            </li>
-          </ul>
-        </section>
       </div>
     </>
   );

@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import "./Navigation.css";
 import routes from "../routes";
 
-const Navigation = () => {
+const Navigation = ({ setMobileMenuOpen }) => {
   return (
     <>
       <div className="mt-6 flow-root">
@@ -13,6 +13,7 @@ const Navigation = () => {
                 <NavLink
                   to={item.path}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
                 </NavLink>
@@ -21,16 +22,6 @@ const Navigation = () => {
           </div>
         </div>
       </div>
-
-      {/* <nav className="header-nav-items">
-        <ul>
-          {routes.map((item) => (
-            <li key={item.name}>
-              <NavLink to={item.path}>{item.name}</NavLink>
-            </li>
-          ))}
-        </ul>
-      </nav> */}
     </>
   );
 };

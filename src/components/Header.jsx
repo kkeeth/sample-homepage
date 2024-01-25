@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { Dialog, Popover } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import routes from "../routes";
 import Navigation from "./Navigation";
 
 const Header = () => {
@@ -8,31 +10,7 @@ const Header = () => {
 
   return (
     <>
-      {/* <header>
-        <div className="logo">
-        </div>
-        <ul className="header-sns-items">
-          <li>
-            <a href="#">
-              <img
-                src="/src/assets/twitter-brands.svg"
-                alt="twitter アイコン"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img
-                src="/src/assets/instagram-brands.svg"
-                alt="instagram アイコン"
-              />
-            </a>
-          </li>
-        </ul>
-      </header>
-  */}
-
-      <header className="bg-white">
+      <header className="bg-white shadow sticky top-0">
         <nav
           className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
           aria-label="Global"
@@ -60,24 +38,15 @@ const Header = () => {
             </button>
           </div>
           <Popover.Group className="hidden lg:flex lg:gap-x-12">
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-              Features
-            </a>
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-              Marketplace
-            </a>
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-              Company
-            </a>
+            {routes.map((item) => (
+              <NavLink
+                key={item.name}
+                to={item.path}
+                className="text-sm font-semibold leading-6 text-gray-900"
+              >
+                {item.name}
+              </NavLink>
+            ))}
           </Popover.Group>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
         </nav>
@@ -90,14 +59,16 @@ const Header = () => {
           <div className="fixed inset-0 z-10" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+              <NavLink to={"/"} className="-m-1.5 p-1.5 flex">
                 <img
                   className="h-8 w-auto"
                   src="https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/production/podcast_uploaded400/1763370/1763370-1611655391437-470d23c0b23e5.jpg"
                   alt=""
                 />
-              </a>
+                <span className="ml-2 text-4xl text-slate-700 font-light h-6 pt-1">
+                  Keeth
+                </span>
+              </NavLink>
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -107,7 +78,7 @@ const Header = () => {
                 <XMarkIcon className="h-6 w-6" aria-hidden="true" />
               </button>
             </div>
-            <Navigation />
+            <Navigation mobileMenuOpen setMobileMenuOpen />
           </Dialog.Panel>
         </Dialog>
       </header>
