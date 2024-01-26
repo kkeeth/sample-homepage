@@ -1,6 +1,7 @@
 import App from "./pages/App";
 import Output from "./pages/Output";
 import Profile from "./pages/Profile";
+import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import BaseLayout from "./components/BaseLayout";
@@ -34,6 +35,16 @@ export default [
       </BaseLayout>
     ),
   },
+  {
+    path: "/gallery",
+    name: "Gallery",
+    element: (
+      <BaseLayout>
+        <Gallery />
+      </BaseLayout>
+    ),
+  },
+
   {
     path: "/contact",
     name: "Contact",

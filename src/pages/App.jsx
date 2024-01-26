@@ -1,10 +1,9 @@
-import "./App.css";
 import keyVisual from "../assets/bg-image.png";
 
 const App = () => {
   return (
     <>
-      <div className="h-[800px] w-auto relative isolate overflow-hidden">
+      <div className="min-h-[702px] w-auto relative isolate overflow-hidden">
         <img
           className=" h-full object-cover opacity-30"
           src={keyVisual}

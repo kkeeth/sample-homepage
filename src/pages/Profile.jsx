@@ -1,7 +1,7 @@
 const Profile = () => {
   return (
     <>
-      <div className="flex-row md:flex items-center justify-center ">
+      <div className="flex-row md:flex items-start justify-center mt-4">
         <div className="md:w-1/2 pl-4 pr-2">
           <div className="text-center">
             <img
@@ -65,6 +65,20 @@ const Profile = () => {
               </div>
               <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                 <dt className="text-md font-medium leading-6 text-gray-900">
+                  ポッドキャスト
+                </dt>
+                <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                  <a
+                    href="https://art19.com/shows/kkeethengineers"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    kkeethのエンジニア雑談チャンネル
+                  </a>
+                </dd>
+              </div>
+              <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt className="text-md font-medium leading-6 text-gray-900">
                   𝕏
                 </dt>
                 <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
@@ -93,15 +107,15 @@ const Profile = () => {
               </div>
               <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                 <dt className="text-md font-medium leading-6 text-gray-900">
-                  ポッドキャスト
+                  Instagram
                 </dt>
                 <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                   <a
-                    href="https://art19.com/shows/kkeethengineers"
+                    href="https://www.instagram.com/kuwahara_jsri"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    kkeethのエンジニア雑談チャンネル
+                    @kuwahara_jsri
                   </a>
                 </dd>
               </div>

@@ -7,7 +7,7 @@ import riotJPG from "../assets/riot_cover.jpg";
 const Output = () => {
   return (
     <>
-      <div className="flex-row md:flex md:flex-col justify-center items-center p-4">
+      <div className="flex-row md:flex md:flex-col justify-center items-center p-4 gap-8">
         <div className="w-full md:flex md:justify-between">
           <div className="md:w-1/2 p-4">
             <img
@@ -154,7 +154,7 @@ const Output = () => {
               </li>
             </ul>
           </div>
-          <div className="md:w-1/2 p-4">
+          <div className="md:w-1/2 p-4 ">
             <img src={npmSVG} alt="画像2" className="w-full h-auto" />
           </div>
         </div>

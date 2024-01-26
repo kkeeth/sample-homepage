@@ -4,6 +4,9 @@ import { Dialog, Popover } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import routes from "../routes";
 import Navigation from "./Navigation";
+import xSVG from "../assets/twitter-brands.svg";
+import githubSVG from "../assets/mark-github.svg";
+import instagramSVG from "../assets/instagram-brands.svg";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -79,6 +82,34 @@ const Header = () => {
               </button>
             </div>
             <Navigation mobileMenuOpen setMobileMenuOpen />
+            <hr />
+            <div className="flex justify-center mt-8 gap-4">
+              <a
+                href="https://x.com/kuwahara_jsri"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={xSVG} alt="𝕏のロゴ" className="w-8 h-8" />
+              </a>
+              <a
+                href="https://github.com/kkeeth"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={githubSVG} alt="GitHubのロゴ" className="w-8 h-8" />
+              </a>
+              <a
+                href="https://instagram.com/kuwahara_jsri"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={instagramSVG}
+                  alt="Instagramのロゴ"
+                  className="w-8 h-8"
+                />
+              </a>
+            </div>
           </Dialog.Panel>
         </Dialog>
       </header>
